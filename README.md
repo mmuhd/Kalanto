@@ -17,7 +17,7 @@ Documentation for Pixelfed can be found on the [Pixelfed documentation website](
 
 ## License
 
-Pixelfed is open-sourced software licensed under the AGPL license.
+Kalanto is built on Pixelfed which is an open-sourced software licensed under the AGPL license.
 
 ## Communication
 
