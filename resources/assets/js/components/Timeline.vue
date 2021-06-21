@@ -30,7 +30,7 @@
 					</div>
 					<div>
 						<div v-if="loading" class="text-center" style="padding-top:10px;">
-							<div class="spinner-border" role="status">
+							<div class="spinner-border kalanto-text" role="status">
 								<span class="sr-only">Loading...</span>
 							</div>
 						</div>
@@ -289,26 +289,26 @@
 										<div slot="no-more">
 											<div v-if="recentFeed">
 												<p class="text-center"><i class="far fa-check-circle fa-8x text-lighter"></i></p>
-												<p class="text-center h3 font-weight-light">You're All Caught Up!</p>
-												<p class="text-center text-muted font-weight-light">You've seen all the new posts from the accounts you follow.</p>
+												<p class="text-center h3 font-weight-light kalanto-text">You're All Caught Up!</p>
+												<p class="text-center text-muted font-weight-light kalanto-text">You've seen all the new posts from the accounts you follow.</p>
 												<p class="text-center mb-0">
-													<a class="btn btn-link font-weight-bold px-4" href="/?a=vop">View Older Posts</a>
+													<a class="btn btn-link font-weight-bold kalanto-text px-4" href="/?a=vop">View Older Posts</a>
 												</p>
 												<p class="text-center mb-0">
-													<a class="btn btn-link font-weight-bold px-4" href="/" @click.prevent="alwaysViewOlderPosts()">Always show older posts on this device</a>
+													<a class="btn btn-link font-weight-bold kalanto-text px-4" href="/" @click.prevent="alwaysViewOlderPosts()">Always show older posts on this device</a>
 												</p>
 											</div>
 											<div v-else>
-												<p class="text-center h3 font-weight-light">You've reached the end of this feed</p>
+												<p class="text-center h3 font-weight-light kalanto-text">You've reached the end of this feed</p>
 												<p class="text-center mb-0">
-													<a class="btn btn-link font-weight-bold px-4" href="/discover">Discover new posts and people</a>
+													<a class="btn btn-link font-weight-bold kalanto-text px-4" href="/discover">Discover new posts and people</a>
 												</p>
 											</div>
 										</div>
 										<div slot="no-results">
 											<div v-if="recentFeed">
 												<p class="text-center"><i class="far fa-check-circle fa-8x text-lighter"></i></p>
-												<p class="text-center h3 font-weight-light">You're All Caught Up!</p>
+												<p class="text-center h3 font-weight-light kalanto-text">You're All Caught Up!</p>
 												<p class="text-center text-muted font-weight-light">You've seen all the new posts from the accounts you follow.</p>
 												<p class="text-center mb-0">
 													<a class="btn btn-link font-weight-bold px-4" href="/?a=vop">View Older Posts</a>
@@ -318,9 +318,9 @@
 												</p>
 											</div>
 											<div v-else>
-												<p class="text-center h3 font-weight-light">You've reached the end of this feed</p>
+												<p class="text-center h3 font-weight-light kalanto-text">You've reached the end of this feed</p>
 												<p class="text-center mb-0">
-													<a class="btn btn-link font-weight-bold px-4" href="/discover">Discover new posts and people</a>
+													<a class="btn btn-link font-weight-bold kalanto-text px-4" href="/discover">Discover new posts and people</a>
 												</p>
 											</div>
 										</div>
@@ -738,7 +738,7 @@
 							</div>
 							<hr>
 							<div class="postCommentsLoader text-center py-2">
-								<div class="spinner-border" role="status">
+								<div class="spinner-border kalanto-text" role="status">
 									<span class="sr-only">Loading...</span>
 								</div>
 							</div>

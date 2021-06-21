@@ -73,7 +73,7 @@
 						<span class="font-weight-bold mb-0">{{pageTitle}}</span>
 					</div>
 					<div v-if="page == 2">
-						<a v-if="media.length == 1" href="#" class="text-center text-dark" @click.prevent="showCropPhotoCard" title="Crop & Resize" id="cm-crop-btn"><i class="fas fa-crop-alt fa-lg"></i></a>
+						<a v-if="media.length == 1" href="#" class="text-center kalanto-text" @click.prevent="showCropPhotoCard" title="Crop & Resize" id="cm-crop-btn"><i class="fas fa-crop-alt fa-lg"></i></a>
 						<b-tooltip target="cm-crop-btn" triggers="hover">
 							Crop & Resize
 						</b-tooltip>
@@ -81,7 +81,7 @@
 					<div>
 						<!-- <a v-if="page > 1" class="font-weight-bold text-decoration-none" href="#" @click.prevent="page--">Back</a> -->
 						<span v-if="pageLoading">
-							<div class="spinner-border spinner-border-sm" role="status">
+							<div class="spinner-border spinner-border-sm kalanto-text" role="status">
 								<span class="sr-only">Loading...</span>
 							</div>
 						</span>
@@ -146,7 +146,7 @@
 
 					<div v-if="page == 1" class="w-100 h-100 d-flex justify-content-center align-items-center" style="min-height: 400px;">
 						<div class="text-center">
-							<div v-if="media.length == 0" class="card mx-md-5 my-md-3 shadow-none border compose-action text-decoration-none text-dark">
+							<div v-if="media.length == 0" class="card mx-md-5 my-md-3 shadow-none border compose-action text-decoration-none kalanto-text">
 								<div @click.prevent="addMedia" class="card-body">
 									<div class="media">
 										<div class="mr-3 align-items-center justify-content-center" style="display:inline-flex;width:40px;height:40px;border-radius: 100%;background-color: #008DF5">
@@ -162,7 +162,7 @@
 								</div>
 							</div>
 
-							<div v-if="config.ab.top == true && media.length == 0" class="card mx-md-5 my-md-3 shadow-none border compose-action text-decoration-none text-dark">
+							<div v-if="config.ab.top == true && media.length == 0" class="card mx-md-5 my-md-3 shadow-none border compose-action text-decoration-none kalanto-text">
 								<div @click.prevent="addText" class="card-body">
 									<div class="media">
 										<div class="mr-3 align-items-center justify-content-center" style="display:inline-flex;width:40px;height:40px;border-radius: 100%;border: 2px solid #008DF5">
@@ -181,7 +181,7 @@
 								</div>
 							</div>
 
-							<a v-if="config.features.stories == true" class="card mx-md-5 my-md-3 shadow-none border compose-action text-decoration-none text-dark" href="/i/stories/new">
+							<a v-if="config.features.stories == true" class="card mx-md-5 my-md-3 shadow-none border compose-action text-decoration-none kalanto-text" href="/i/stories/new">
 								<div class="card-body">
 									<div class="media">
 										<div class="mr-3 align-items-center justify-content-center" style="display:inline-flex;width:40px;height:40px;border-radius: 100%;border: 2px solid #008DF5">
@@ -200,7 +200,7 @@
 								</div>
 							</a>
 
-							<a class="card mx-md-5 my-md-3 shadow-none border compose-action text-decoration-none text-dark" href="/i/collections/create">
+							<a class="card mx-md-5 my-md-3 shadow-none border compose-action text-decoration-none kalanto-text" href="/i/collections/create">
 								<div class="card-body">
 									<div class="media">
 										<div class="mr-3 align-items-center justify-content-center" style="display:inline-flex;width:40px;height:40px;border-radius: 100%;border: 2px solid #008DF5">
@@ -323,7 +323,7 @@
 						</div>
 						<div class="border-bottom d-flex justify-content-between px-4 mb-0 py-2 ">
 							<div>
-								<div class="text-dark ">Contains NSFW Media</div>
+								<div class="kalanto-text ">Contains NSFW Media</div>
 							</div>
 							<div>
 								<div class="custom-control custom-switch" style="z-index: 9999;">
@@ -360,7 +360,7 @@
 						<!-- <div class="cursor-pointer border-bottom px-4 mb-0 py-2" @click.prevent="showMediaDescriptionsCard()">
 							<div class="d-flex justify-content-between align-items-center">
 								<div>
-									<div class="text-dark">Media Descriptions</div>
+									<div class="kalanto-text">Media Descriptions</div>
 									<p class="text-muted small mb-0">Describe your photos for people with visual impairments.</p>
 								</div>
 								<div>
@@ -430,7 +430,7 @@
 						<div class="list-group list-group-flush">
 							<!-- <div class="d-none list-group-item d-flex justify-content-between">
 								<div>
-									<div class="text-dark ">Optimize Media</div>
+									<div class="kalanto-text ">Optimize Media</div>
 									<p v-if="mediaCropped" class="text-muted small mb-0">Media was cropped or filtered, it must be optimized.</p>
 									<p v-else class="text-muted small mb-0">Compress media for smaller file size.</p>
 								</div>
@@ -443,7 +443,7 @@
 							</div> -->
 							<div class="list-group-item d-flex justify-content-between">
 								<div>
-									<div class="text-dark ">Turn off commenting</div>
+									<div class="kalanto-text ">Turn off commenting</div>
 									<p class="text-muted small mb-0">Disables comments for this post, you can change this later.</p>
 								</div>
 								<div>
@@ -456,7 +456,7 @@
 							<a href="#" class="list-group-item" @click.prevent="showMediaDescriptionsCard()">
 								<div class="d-flex justify-content-between align-items-center">
 									<div>
-										<div class="text-dark">Media Descriptions</div>
+										<div class="kalanto-text">Media Descriptions</div>
 										<p class="text-muted small mb-0">Describe your photos for people with visual impairments.</p>
 									</div>
 									<div>
@@ -467,7 +467,7 @@
 							<!-- <a href="#" class="list-group-item" @click.prevent="showAddToCollectionsCard()">
 								<div class="d-flex justify-content-between align-items-center">
 									<div>
-										<div class="text-dark">Add to Collection</div>
+										<div class="kalanto-text">Add to Collection</div>
 										<p class="text-muted small mb-0">Add this post to a collection.</p>
 									</div>
 									<div>
@@ -478,7 +478,7 @@
 							<a href="#" class="list-group-item" @click.prevent="page = 'schedulePost'">
 								<div class="d-flex justify-content-between align-items-center">
 									<div>
-										<div class="text-dark">Schedule</div>
+										<div class="kalanto-text">Schedule</div>
 										<p class="text-muted small mb-0">Schedule post for a future date.</p>
 									</div>
 									<div>
@@ -489,7 +489,7 @@
 							<a href="#" class="list-group-item" @click.prevent="page = 'mediaMetadata'">
 								<div class="d-flex justify-content-between align-items-center">
 									<div>
-										<div class="text-dark">Metadata</div>
+										<div class="kalanto-text">Metadata</div>
 										<p class="text-muted small mb-0">Manage media exif and metadata.</p>
 									</div>
 									<div>
@@ -623,7 +623,7 @@
 
 						<div class="border-bottom d-flex justify-content-between px-4 mb-0 py-2 ">
 							<div>
-								<div class="text-dark ">Contains NSFW Media</div>
+								<div class="kalanto-text ">Contains NSFW Media</div>
 							</div>
 							<div>
 								<div class="custom-control custom-switch" style="z-index: 9999;">

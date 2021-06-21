@@ -8,13 +8,13 @@
 			</div>
 			<div class="card-body">
 				<div class="card-title mb-0">
-					<span class="font-weight-bold">{{announcement.title}}</span>
+					<span class="font-weight-bold kalanto-text">{{announcement.title}}</span>
 				</div>
 				<p class="card-text">
 					<span style="font-size:13px;">{{announcement.summary}}</span>
 				</p>
 				<p class="d-flex align-items-center justify-content-between mb-0">
-					<a v-if="announcement.url" :href="announcement.url" class="small font-weight-bold mb-0">Read more</a>
+					<a v-if="announcement.url" :href="announcement.url" class="small font-weight-bold kalanto-text mb-0">Read more</a>
 					<span v-else></span>
 					<span>
 						<span :class="[showPrev ? 'btn btn-outline-secondary btn-sm py-0':'btn btn-outline-secondary btn-sm py-0 disabled']" :disabled="showPrev == false" @click="loadPrev()">

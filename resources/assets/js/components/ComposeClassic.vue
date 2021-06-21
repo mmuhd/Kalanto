@@ -5,12 +5,12 @@
 		<div class="card status-card card-md-rounded-0">
 			<div class="card-header d-inline-flex align-items-center bg-white">
 				<img v-bind:src="profile.avatar" width="32px" height="32px" style="border-radius: 32px;" class="box-shadow">
-				<a class="username font-weight-bold pl-2 text-dark" v-bind:href="profile.url">
+				<a class="username font-weight-bold pl-2 kalanto-text" v-bind:href="profile.url">
 					{{profile.username}}
 				</a>
 				<div class="text-right" style="flex-grow:1;">
 					<div class="dropdown">
-						<button class="btn btn-link text-dark no-caret dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Post options">
+						<button class="btn btn-link kalanto-text no-caret dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Post options">
 							<span class="fas fa-ellipsis-v fa-lg text-muted"></span>
 						</button>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">

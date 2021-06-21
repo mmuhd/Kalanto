@@ -9,7 +9,7 @@
 
 	<meta name="mobile-web-app-capable" content="yes">
 
-	<title>{{ $title ?? config_cache('app.name') }}</title>
+	<title>Kalanto</title>
 	<link rel="manifest" href="/manifest.json">
 
 	<meta property="og:site_name" content="{{ config_cache('app.name') }}">
@@ -19,7 +19,7 @@
 	@stack('meta')
 
 	<meta name="medium" content="image">
-	<meta name="theme-color" content="#10c5f8">
+	<meta name="theme-color" content="#ff003f">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="shortcut icon" type="image/png" href="/img/favicon.png?v=2">
 	<link rel="apple-touch-icon" type="image/png" href="/img/favicon.png?v=2">
@@ -40,6 +40,14 @@
 
 	<script type="text/javascript">window._sharedData = {curUser: {}, version: 0}; window.App = {config: {!!App\Util\Site\Config::json()!!}};</script>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XCTJ7RVLJL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XCTJ7RVLJL');
+    </script>
 </head>
 <body class="loggedIn">
 	@include('layouts.partial.nav')
@@ -63,21 +71,21 @@
 		<div class="card card-body rounded-0 py-2 box-shadow" style="border-top:1px solid #F1F5F8">
 			<ul class="nav nav-pills nav-fill d-flex align-items-middle">
 			  <li class="nav-item">
-				<a class="nav-link text-dark" href="/"><i class="fas fa-home fa-lg"></i></a>
+				<a class="nav-link kalanto-text" href="/timeline/public"><i class="fas fa-home fa-lg"></i></a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link text-dark" href="/discover"><i class="fas fa-search fa-lg"></i></a>
+				<a class="nav-link kalanto-text" href="/discover"><i class="fas fa-search fa-lg"></i></a>
 			  </li>
 			  <li class="nav-item">
-				<div class="nav-link cursor-pointer text-dark" onclick="App.util.compose.post()">
+				<div class="nav-link cursor-pointer kalanto-text" onclick="App.util.compose.post()">
 					<i class="far fa-plus-square fa-2x"></i>
 				</div>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link text-dark" href="/account/activity"><i class="far fa-bell fa-lg"></i></a>
+				<a class="nav-link kalanto-text" href="/account/activity"><i class="far fa-bell fa-lg"></i></a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link text-dark" href="/i/me"><i class="far fa-user fa-lg"></i></a>
+				<a class="nav-link kalanto-text" href="/i/me"><i class="far fa-user fa-lg"></i></a>
 			  </li>
 			</ul>
 		</div>

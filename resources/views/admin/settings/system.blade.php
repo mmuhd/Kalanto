@@ -47,7 +47,7 @@
   <p class="h6 text-uppercase text-center">LATEST RELEASE</p>
   <div>
     <div class="card-loading text-center">
-      <div class="spinner-border" role="status">
+      <div class="spinner-border kalanto-text" role="status">
         <span class="sr-only">Loading…</span>
       </div>
     </div>

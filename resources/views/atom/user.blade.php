@@ -4,7 +4,7 @@
 ?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <id>{{$profile->permalink('.atom')}}</id>
-  <title>{{$profile->username}} on Pixelfed</title>
+  <title>{{$profile->username}} on Kalanto</title>
   <subtitle>{{$profile->bio}}</subtitle>
   <updated>{{$profile->updated_at->toAtomString()}}</updated>
   <logo></logo>

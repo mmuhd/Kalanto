@@ -22,7 +22,7 @@
       <label class="form-check-label font-weight-bold" for="is_private">
         {{__('Private Account')}}
       </label>
-      <p class="text-muted small help-text">When your account is private, only people you approve can see your photos and videos on pixelfed. Your existing followers won't be affected.</p>
+      <p class="text-muted small help-text">When your account is private, only people you approve can see your photos and videos on Kalanto. Your existing followers won't be affected.</p>
     </div>
     <div class="form-check pb-3">
       <input class="form-check-input" type="checkbox" name="crawlable" id="crawlable" {{!$settings->crawlable ? 'checked=""':''}} {{$settings->is_private ? 'disabled=""':''}}>

@@ -22,7 +22,7 @@
           <a href="?a=comment" class="pr-4 text-muted" title="Commented on your post"><i class="fas fa-comment fa-2x"></i></a>
           <a href="?a=follow" class="pr-4 text-muted" title="Followed you"><i class="fas fa-user-plus fa-2x"></i></a>
           <a href="?a=mention" class="pr-4 text-muted" title="Mentioned you"><i class="fas fa-comment-dots fa-2x"></i></a>
-          <a href="{{route('notifications')}}" class="font-weight-bold text-dark">View All</a>
+          <a href="{{route('notifications')}}" class="font-weight-bold kalanto-text">View All</a>
         </span>
       </div> --}}
     </div>
@@ -44,11 +44,11 @@
               return $actor->avatarUrl(); }) }}" width="32px" class="rounded-circle">
           </span>
           <span class="notification-text">
-            <a class="font-weight-bold text-dark" href="{{$notification->actor->url()}}">{{$notification->actor->username}}</a>
+            <a class="font-weight-bold kalanto-text" href="{{$notification->actor->url()}}">{{$notification->actor->username}}</a>
 
             {{__('liked a post by')}}
             
-            <a class="font-weight-bold text-dark" href="{{$notification->item->profile->url()}}">{{$notification->item->profile->username}}</a>
+            <a class="font-weight-bold kalanto-text" href="{{$notification->item->profile->url()}}">{{$notification->item->profile->username}}</a>
 
             <span class="text-muted notification-timestamp pl-1">{{$notification->created_at->diffForHumans(null, true, true, true)}}</span>
           </span>
@@ -64,11 +64,11 @@
             <img src="{{$notification->actor->avatarUrl()}}" width="32px" class="rounded-circle">
           </span>
           <span class="notification-text">
-            <a class="font-weight-bold text-dark" href="{{$notification->actor->url()}}">{{$notification->actor->username}}</a>
+            <a class="font-weight-bold kalanto-text" href="{{$notification->actor->url()}}">{{$notification->actor->username}}</a>
 
             {{__('started following')}}
             
-            <a class="font-weight-bold text-dark" href="{{$notification->item->url()}}">{{$notification->item->username}}</a>
+            <a class="font-weight-bold kalanto-text" href="{{$notification->item->url()}}">{{$notification->item->username}}</a>
 
             <span class="text-muted notification-timestamp pl-1">{{$notification->created_at->diffForHumans(null, true, true, true)}}</span>
           </span>

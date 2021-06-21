@@ -242,17 +242,17 @@
 	size="sm"
 	body-class="list-group-flush p-0 rounded">
 	<div class="list-group text-center">
-		<div v-if="ctxContext && ctxContext.type == 'photo'" class="list-group-item rounded cursor-pointer font-weight-bold text-dark" @click="viewOriginal()">View Original</div>
-		<div v-if="ctxContext && ctxContext.type == 'video'" class="list-group-item rounded cursor-pointer font-weight-bold text-dark" @click="viewOriginal()">Play</div>
+		<div v-if="ctxContext && ctxContext.type == 'photo'" class="list-group-item rounded cursor-pointer font-weight-bold kalanto-text" @click="viewOriginal()">View Original</div>
+		<div v-if="ctxContext && ctxContext.type == 'video'" class="list-group-item rounded cursor-pointer font-weight-bold kalanto-text" @click="viewOriginal()">Play</div>
 		<div v-if="ctxContext && ctxContext.type == 'link'" class="list-group-item rounded cursor-pointer" @click="clickLink()">
 			<p class="mb-0" style="font-size:12px;">
 				Navigate to 
 			</p>
-			<p class="mb-0 font-weight-bold text-dark">
+			<p class="mb-0 font-weight-bold kalanto-text">
 				{{this.ctxContext.meta.domain}}
 			</p>
 		</div>
-		<div v-if="ctxContext && (ctxContext.type == 'text' || ctxContext.type == 'emoji' || ctxContext.type == 'link')" class="list-group-item rounded cursor-pointer text-dark" @click="copyText()">Copy</div>
+		<div v-if="ctxContext && (ctxContext.type == 'text' || ctxContext.type == 'emoji' || ctxContext.type == 'link')" class="list-group-item rounded cursor-pointer kalanto-text" @click="copyText()">Copy</div>
 		<div v-if="ctxContext && !ctxContext.isAuthor" class="list-group-item rounded cursor-pointer text-muted" @click="reportMessage()">Report</div>
 		<div v-if="ctxContext && ctxContext.isAuthor" class="list-group-item rounded cursor-pointer text-muted" @click="deleteMessage()">Delete</div>
 		<div class="list-group-item rounded cursor-pointer text-lighter" @click="closeCtxMenu()">Cancel</div>

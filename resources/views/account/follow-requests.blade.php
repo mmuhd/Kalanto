@@ -5,7 +5,7 @@
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
       <div></div>
-      <a href="/account/activity" class="cursor-pointer font-weight-bold text-dark">Notifications</a>
+      <a href="/account/activity" class="cursor-pointer font-weight-bold kalanto-text">Notifications</a>
       <a href="/account/follow-requests" class="cursor-pointer font-weight-bold text-primary">Follow Requests</a>
       <div></div>
     </div>
@@ -21,7 +21,7 @@
             <img src="{{$follow->follower->avatarUrl()}}" width="32px" class="rounded-circle">
           </span>
           <span class="notification-text">
-            <a class="font-weight-bold text-dark" href="{{$follow->follower->url()}}">{{$follow->follower->username}}</a> {{__('wants to follow you')}}
+            <a class="font-weight-bold kalanto-text" href="{{$follow->follower->url()}}">{{$follow->follower->username}}</a> {{__('wants to follow you')}}
             <span class="text-muted notification-timestamp pl-1">{{$follow->created_at->diffForHumans(null, true, true)}}</span>
           </span>
           <span class="float-right">

@@ -18,7 +18,7 @@
 							<button class="btn btn-outline-light btn-sm" @click.prevent="addToCollection" onclick="this.blur();">
 								<span v-if="loadingPostList == false">Add Photo</span>
 								<span v-else class="px-4">
-									<div class="spinner-border spinner-border-sm" role="status">
+									<div class="spinner-border spinner-border-sm kalanto-text" role="status">
 									  <span class="sr-only">Loading...</span>
 									</div>
 								</span>
@@ -94,7 +94,7 @@
 			</div>
 			<button type="button" class="btn btn-primary btn-sm py-1 font-weight-bold px-3 float-right" @click.prevent="pushId">
 				<span v-if="addingPostToCollection" class="px-4">
-					<div class="spinner-border spinner-border-sm" role="status">
+					<div class="spinner-border spinner-border-sm kalanto-text" role="status">
 						<span class="sr-only">Loading...</span>
 					</div>
 				</span>
@@ -106,7 +106,7 @@
 	</b-modal>
 	<b-modal ref="editPhotosModal" id="edit-photos-modal" hide-footer centered title="Edit Collection Photos" body-class="m-3">
 		<div class="form-group">
-			<p class="font-weight-bold text-dark text-center">Select a Photo to Delete</p>
+			<p class="font-weight-bold kalanto-text text-center">Select a Photo to Delete</p>
 			<div class="row m-1 scrollbar-hidden" v-if="posts.length > 0" style="max-height: 350px;overflow-y: auto;">
 				<div v-for="(p, index) in posts" :key="'plm-'+index" class="col-4 p-1 cursor-pointer">
 					<div :class="[markedForDeletion.indexOf(p.id) == -1 ? 'square' : 'square  delete-border']" @click="markPhotoForDeletion(p.id)">

@@ -5,8 +5,8 @@
 				<div class="d-flex justify-content-between align-items-center">
 					<div></div>
 					<a href="/account/activity" class="cursor-pointer font-weight-bold text-primary">Notifications</a>
-					<a href="/account/direct" class="cursor-pointer font-weight-bold text-dark">Direct Messages</a>
-					<a href="/account/following" class="cursor-pointer font-weight-bold text-dark">Following</a>
+					<a href="/account/direct" class="cursor-pointer font-weight-bold kalanto-text">Direct Messages</a>
+					<a href="/account/following" class="cursor-pointer font-weight-bold kalanto-text">Following</a>
 					<div></div>
 				</div>
 			</div>
@@ -19,42 +19,42 @@
 						<div class="media-body font-weight-light">
 							<div v-if="n.type == 'favourite'">
 								<p class="my-0">
-									<a :href="getProfileUrl(n.account)" class="font-weight-bold text-dark word-break" data-placement="bottom" data-toggle="tooltip" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> liked your <a class="font-weight-bold" v-bind:href="getPostUrl(n.status)">post</a>.
+									<a :href="getProfileUrl(n.account)" class="font-weight-bold kalanto-text word-break" data-placement="bottom" data-toggle="tooltip" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> liked your <a class="font-weight-bold" v-bind:href="getPostUrl(n.status)">post</a>.
 								</p>
 							</div>
 							<div v-else-if="n.type == 'comment'">
 								<p class="my-0">
-									<a :href="getProfileUrl(n.account)" class="font-weight-bold text-dark word-break" data-placement="bottom" data-toggle="tooltip" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> commented on your <a class="font-weight-bold" v-bind:href="getPostUrl(n.status)">post</a>.
+									<a :href="getProfileUrl(n.account)" class="font-weight-bold kalanto-text word-break" data-placement="bottom" data-toggle="tooltip" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> commented on your <a class="font-weight-bold" v-bind:href="getPostUrl(n.status)">post</a>.
 								</p>
 							</div>
 							<div v-else-if="n.type == 'mention'">
 								<p class="my-0">
-									<a :href="getProfileUrl(n.account)" class="font-weight-bold text-dark word-break" data-placement="bottom" data-toggle="tooltip" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> <a class="font-weight-bold" v-bind:href="mentionUrl(n.status)">mentioned</a> you.
+									<a :href="getProfileUrl(n.account)" class="font-weight-bold kalanto-text word-break" data-placement="bottom" data-toggle="tooltip" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> <a class="font-weight-bold" v-bind:href="mentionUrl(n.status)">mentioned</a> you.
 								</p>
 							</div>
 							<div v-else-if="n.type == 'follow'">
 								<p class="my-0">
-									<a :href="getProfileUrl(n.account)" class="font-weight-bold text-dark word-break" data-placement="bottom" data-toggle="tooltip" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> followed you.
+									<a :href="getProfileUrl(n.account)" class="font-weight-bold kalanto-text word-break" data-placement="bottom" data-toggle="tooltip" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> followed you.
 								</p>
 							</div>
 							<div v-else-if="n.type == 'share'">
 								<p class="my-0">
-									<a :href="getProfileUrl(n.account)" class="font-weight-bold text-dark word-break" data-placement="bottom" data-toggle="tooltip" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> shared your <a class="font-weight-bold" v-bind:href="getPostUrl(n.status)">post</a>.
+									<a :href="getProfileUrl(n.account)" class="font-weight-bold kalanto-text word-break" data-placement="bottom" data-toggle="tooltip" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> shared your <a class="font-weight-bold" v-bind:href="getPostUrl(n.status)">post</a>.
 								</p>
 							</div>
 							<div v-else-if="n.type == 'modlog'">
 								<p class="my-0">
-									<a :href="getProfileUrl(n.account)" class="font-weight-bold text-dark word-break" :title="n.account.username">{{truncate(n.account.username)}}</a> updated a <a class="font-weight-bold" v-bind:href="n.modlog.url">modlog</a>.
+									<a :href="getProfileUrl(n.account)" class="font-weight-bold kalanto-text word-break" :title="n.account.username">{{truncate(n.account.username)}}</a> updated a <a class="font-weight-bold" v-bind:href="n.modlog.url">modlog</a>.
 								</p>
 							</div>
 							<div v-else-if="n.type == 'tagged'">
 								<p class="my-0">
-									<a :href="getProfileUrl(n.account)" class="font-weight-bold text-dark word-break" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> tagged you in a <a class="font-weight-bold" v-bind:href="n.tagged.post_url">post</a>.
+									<a :href="getProfileUrl(n.account)" class="font-weight-bold kalanto-text word-break" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> tagged you in a <a class="font-weight-bold" v-bind:href="n.tagged.post_url">post</a>.
 								</p>
 							</div>
 							<div v-else-if="n.type == 'direct'">
 							<p class="my-0">
-								<a :href="getProfileUrl(n.account)" class="font-weight-bold text-dark word-break" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> sent a <a class="font-weight-bold" v-bind:href="'/account/direct/t/'+n.account.id">dm</a>.
+								<a :href="getProfileUrl(n.account)" class="font-weight-bold kalanto-text word-break" :title="n.account.username">{{n.account.local == false ? '@':''}}{{truncate(n.account.username)}}</a> sent a <a class="font-weight-bold" v-bind:href="'/account/direct/t/'+n.account.id">dm</a>.
 							</p>
 						</div>
 							<div class="align-items-center">

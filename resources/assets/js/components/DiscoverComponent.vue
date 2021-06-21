@@ -12,8 +12,8 @@
 				<div class="profile-timeline">
 					<div class="row p-0 mt-5">
 						<div class="col-12 mb-3 d-flex justify-content-between align-items-center">
-							<p class="d-block d-md-none h1 font-weight-bold mb-0">Trending</p>
-							<p class="d-none d-md-block display-4 font-weight-bold mb-0">Trending</p>
+							<p class="d-block d-md-none h1 font-weight-bold kalanto-text mb-0">Trending</p>
+							<p class="d-none d-md-block display-4 font-weight-bold kalanto-text mb-0">Trending</p>
 							<div>
 								<div class="btn-group">
 									<button @click="trendingRangeToggle('daily')" :class="trendingRange == 'daily' ? 'btn py-1 font-weight-bold px-3 text-uppercase btn-sm btn-danger':'btn py-1 font-weight-bold px-3 text-uppercase btn-sm btn-outline-danger'">Daily</button>
@@ -79,8 +79,8 @@
 				<div class="profile-timeline pt-3">
 					<div class="row p-0 mt-5">
 						<div class="col-12 mb-3 d-flex justify-content-between align-items-center">
-							<p class="d-block d-md-none h1 font-weight-bold mb-0">For You</p>
-							<p class="d-none d-md-block display-4 font-weight-bold mb-0">For You</p>
+							<p class="d-block d-md-none h1 font-weight-bold kalanto-text mb-0">For You</p>
+							<p class="d-none d-md-block display-4 font-weight-bold kalanto-text mb-0">For You</p>
 						</div>
 					</div>
 					<div v-if="!recommendedLoading" class="row p-0 d-flex">
@@ -129,7 +129,7 @@
 						</div>
 					</div>
 					<div v-else class="row d-flex align-items-center justify-content-center bg-light border" style="min-height: 40vh;">
-						<div class="spinner-border" role="status">
+						<div class="spinner-border kalanto-text" role="status">
 							<span class="sr-only">Loading...</span>
 						</div>
 					</div>

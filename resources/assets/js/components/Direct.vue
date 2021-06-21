@@ -12,7 +12,7 @@
 				<div class="card-header bg-white">
 					<ul class="nav nav-pills nav-fill">
 						<li class="nav-item">
-							<a :class="[tab == 'inbox' ? 'nav-link px-4 font-weight-bold rounded-pill active' : 'nav-link px-4 font-weight-bold rounded-pill']" @click.prevent="switchTab('inbox')" href="#">Inbox</a>
+							<a :class="[tab == 'inbox' ? 'nav-link px-4 font-weight-bold rounded-pill active' : 'nav-link px-4 font-weight-bold kalanto-text rounded-pill']" @click.prevent="switchTab('inbox')" href="#">Inbox</a>
 						</li>
 						<li class="nav-item">
 							<a :class="[tab == 'sent' ? 'nav-link px-4 font-weight-bold rounded-pill active' : 'nav-link px-4 font-weight-bold rounded-pill']" @click.prevent="switchTab('sent')" href="#">Sent</a>
@@ -27,7 +27,7 @@
 						<p class="lead mb-0">No messages found :(</p>
 					</div>
 					<div v-else v-for="(thread, index) in messages.inbox">
-						<a class="list-group-item text-dark text-decoration-none border-left-0 border-right-0 border-top-0" :href="'/account/direct/t/'+thread.id">
+						<a class="list-group-item kalanto-text text-decoration-none border-left-0 border-right-0 border-top-0" :href="'/account/direct/t/'+thread.id">
 						<div class="media d-flex align-items-center">
 							<img class="mr-3 rounded-circle img-thumbnail" :src="thread.avatar" alt="Generic placeholder image" width="32px">
 							<div class="media-body">
@@ -63,7 +63,7 @@
 						<p class="lead mb-0">No messages found :(</p>
 					</div>
 					<div v-else v-for="(thread, index) in messages.sent">
-						<a class="list-group-item text-dark text-decoration-none border-left-0 border-right-0 border-top-0" href="#" @click.prevent="loadMessage(thread.id)">
+						<a class="list-group-item kalanto-text text-decoration-none border-left-0 border-right-0 border-top-0" href="#" @click.prevent="loadMessage(thread.id)">
 						<div class="media d-flex align-items-center">
 							<img class="mr-3 rounded-circle img-thumbnail" :src="thread.avatar" alt="Generic placeholder image" width="32px">
 							<div class="media-body">
@@ -99,7 +99,7 @@
 						<p class="lead mb-0">No messages found :(</p>
 					</div>
 					<div v-else v-for="(thread, index) in messages.filtered">
-						<a class="list-group-item text-dark text-decoration-none border-left-0 border-right-0 border-top-0" href="#" @click.prevent="loadMessage(thread.id)">
+						<a class="list-group-item kalanto-text text-decoration-none border-left-0 border-right-0 border-top-0" href="#" @click.prevent="loadMessage(thread.id)">
 						<div class="media d-flex align-items-center">
 							<img class="mr-3 rounded-circle img-thumbnail" :src="thread.avatar" alt="Generic placeholder image" width="32px">
 							<div class="media-body">

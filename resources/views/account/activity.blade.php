@@ -8,7 +8,7 @@
         <div></div>
         <a href="/account/activity" class="cursor-pointer font-weight-bold text-primary">Notifications</a>
         @if(request()->user()->profile->is_private)
-        <a href="/account/follow-requests" class="cursor-pointer font-weight-bold text-dark">Follow Requests</a>
+        <a href="/account/follow-requests" class="cursor-pointer font-weight-bold kalanto-text">Follow Requests</a>
         @endif
         <div></div>
       </div>

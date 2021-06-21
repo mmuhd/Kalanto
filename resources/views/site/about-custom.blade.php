@@ -4,7 +4,7 @@
 <div class="jumbotron jumbotron-fluid bg-primary text-white mb-0 py-4">
 	<div class="container">
 		<p class="h1 font-weight-light">About</p>
-		<p class="h3 font-weight-light py-4">{{$page->title ?? 'Pixelfed is an image sharing platform, an ethical alternative to centralized platforms.'}}</p>
+		<p class="h3 font-weight-light py-4">{{$page->title ?? 'Kalanto is a Sports image sharing platform, for Sports Lovers.'}}</p>
 	</div>
 </div>
 <div class="bg-white">
@@ -115,5 +115,5 @@
 @endsection
 
 @push('meta')
-<meta property="og:description" content="Pixelfed is an image sharing platform, an ethical alternative to centralized platforms.">
+<meta property="og:description" content="Kalanto is a Sports image sharing platform, for Sports Lovers.">
 @endpush
