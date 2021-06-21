@@ -1,3 +1,7 @@
+<p align="center"><h1>KALANTO</h1></p>
+
+## Sports Social Media
+
 <p align="center"><img src="https://kalanto.com/img/pixelfed-icon-color.svg" width="300px"></p>
 
 
